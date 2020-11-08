@@ -4,10 +4,10 @@ from os import system
 from mysql.connector import connect
 
 conn = connect(
-    user = "admin",
-    password="buttbutt",
-    host= "projectdb.c1lco9rivug4.us-east-2.rds.amazonaws.com",
-    database = "LawfirmProject_DB"
+    user = "",
+    password="",
+    host= "",
+    database = ""
 )
 #except mysql.connector.Error as err:
    # print(‘Error connecting to DB’)
