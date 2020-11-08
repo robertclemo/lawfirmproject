@@ -6,10 +6,10 @@ from colorama import Fore, Style
 
 
 firmdb = mysql.connector.connect(
-    host="myproject-database.cipvfz3qjhug.us-east-1.rds.amazonaws.com",
-    user="admin",
-    password="Phipsy1!",
-    database="myproject_DB"
+    host="",
+    user="",
+    password="",
+    database=""
 )
 
 def displayStaff():
