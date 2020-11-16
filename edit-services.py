@@ -6,9 +6,9 @@ from mysql.connector import connect
 
 conn = connect( 
     user = "root",
-    password = "buttbutt",
+    password = "",
     host = "127.0.0.1",
-    database =  "nci_db"   
+    database =  ""   
 )
 
 def displayServices():
