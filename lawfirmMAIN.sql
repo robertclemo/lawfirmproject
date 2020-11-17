@@ -1,22 +1,17 @@
+create table employees
+(empID serial primary key, Last_Name text not null, First_Name text not null, Title text not null, ReportsTo int, Email text not NULL, username text NOT NULL, pass text NOT null)
 
-drop table staff
+insert into employees(Last_Name, First_Name, Title, ReportsTo, Email, username, pass) values
+('Summers', 'Arthur', 'Partner', null, 'asummers@gmail.com', 'asummers', 'asummers20'),
+('Simmons', 'Brenda', 'HR', 1, 'bsimmons@gmail.com', 'bsimmons', 'bsimmons20'),
+('Rolle', 'Bryan', 'Prosecuting_Attorney', 2, 'brolle@gmail.com', 'brolle', 'brolle20'),
+('Higgins', 'Christie', 'Divorce_Attorney', 2, 'chiggins@gmail.com', 'chiggins', 'chiggins20'),
+('Mitchell', 'Jeffery', 'Tax_Attorney', 2, 'jmitchell@gmail.com', 'jmitchell', 'jmitchell20'),
+('Clemo', 'Robert', 'Immigration_Attorney', 2, 'rclemo@gmail.com', 'rclemo', 'rclemo20'),
+('Wilson', 'Woody', 'Defense_Attorney', 2, 'wwilson@gmail.com', 'wwilson', 'wwilson20'),
+('Goldsmith', 'Lisa', 'Secretary', 2, 'lgoldsmith@gmail.com', 'lgoldsmith', 'lgoldsmith20'),
+('Crofton', 'Charles', 'Custodian', 2, 'ccrofton@gmail.com', 'ccrofton', 'ccrofton20')
 
-______
+select * from employees;
 
-create table staff
-(empID serial primary key, fname text not null, lname text not null, email text not null, specialty text not null, department text not null)
-
-select empID AS "Employee ID", fname AS "First Name", lname AS "Last Name", email AS "Email", specialty AS "Specialty", department AS "Department" from staff
-
-insert into staff(fname, lname, email, specialty, department) values
-('Arthur', 'Summers', 'asummers@lawfirm.com', 'Attorney', 'Lawyer'),
-('Bryan', 'Rolle', 'brolle@lawfirm.com', 'Prosecuting_Attorney', 'Lawyer'),
-('Christie', 'Higgins', 'chiggins@lawfirm.com', 'Divorce_Attorney', 'Lawyer'),
-('Jeffery', 'Mitchell', 'jmitchell@lawfirm.com', 'Tax_Attorney', 'Lawyer'),
-('Robert', 'Clemo', 'rclemo@lawfirm.com', 'Immigration_Attorney', 'Lawyer'),
-('Woody', 'Wilson', 'wwilson@lawfirm.com', 'Defense_Attorney', 'Lawyer'),
-('Brenda', 'Simmons', 'bsimmons@lawfirm.com', 'Staff', 'HR'),
-('Lisa', 'Goldsmith', 'lgoldsmith@lawfirm.com', 'Staff', 'Secretary'),
-('Charles', 'Crofton', 'ccrofton@lawfirm.com', 'Staff', 'Custodian')
-
-drop table staff
+drop table employees;
