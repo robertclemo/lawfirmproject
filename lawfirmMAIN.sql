@@ -1,7 +1,7 @@
 create table employees
-(empID serial primary key, Last_Name text not null, First_Name text not null, Title text not null, ReportsTo int, Email text not NULL, username text NOT NULL, pass text NOT null)
+(empID serial primary key, Last_Name text not null, First_Name text not null, Title text not null, ReportsTo int, Email text not NULL, username text NOT NULL, passw text NOT null)
 
-insert into employees(Last_Name, First_Name, Title, ReportsTo, Email, username, pass) values
+insert into employees(Last_Name, First_Name, Title, ReportsTo, Email, username, passw) values
 ('Summers', 'Arthur', 'Partner', null, 'asummers@gmail.com', 'asummers', 'asummers20'),
 ('Simmons', 'Brenda', 'HR', 1, 'bsimmons@gmail.com', 'bsimmons', 'bsimmons20'),
 ('Rolle', 'Bryan', 'Prosecuting_Attorney', 2, 'brolle@gmail.com', 'brolle', 'brolle20'),
