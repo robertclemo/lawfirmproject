@@ -11,9 +11,9 @@ load_dotenv()
 
 conn = connect(
     host = "127.0.0.1",
-    user = "root",
-    password = "12345",
-    database =  "nci_db",
+    user = "",
+    password = "",
+    database =  "",
       
 )
 
